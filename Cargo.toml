@@ -1,0 +1,16 @@
+[workspace]
+
+members = [
+    "1.hello_world",
+    "2.hello_cargo",
+    "3.guessing_game",
+    "4.variables",
+    "5.functions",
+    "6.control",
+    "7.ownership",
+    "8.struct",
+    "9.enumerations",
+    "10-1.module-communicator",
+    "10-2.module-privacy_examples",
+    "10-3.module-importing_name",
+]
