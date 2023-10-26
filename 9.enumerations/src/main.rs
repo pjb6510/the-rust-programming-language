@@ -1,7 +1,7 @@
 #[derive(Debug)]
 enum Message {
     Quit,
-    Move { x: i32, y: i32 },
+    Move { _x: i32, _y: i32 },
     Write(String),
     ChangeColor(i32, i32, i32),
 }
@@ -14,15 +14,15 @@ impl Message {
 
 enum Coin {
     Penny,
-    Nickel,
-    Dime,
+    _Nickel,
+    _Dime,
     Quater(UsState),
 }
 
 #[derive(Debug)]
 enum UsState {
     Alabama,
-    Alaska,
+    _Alaska,
     // ... etc
 }
 
@@ -37,7 +37,7 @@ fn show_messages() {
     let quit_message = Message::Quit;
     let write_message = Message::Write(String::from("hello"));
     let change_color_message = Message::ChangeColor(0, 0, 0);
-    let move_message = Message::Move { x: 32, y: 14 };
+    let move_message = Message::Move { _x: 32, _y: 14 };
 
     show_message(move_message);
     show_message(write_message);
@@ -58,8 +58,8 @@ fn show_options() {
     println!("sum: {sum}");
 
     let five = Some(5);
-    let six = plus_one(five);
-    let none = plus_one(None);
+    let _six = plus_one(five);
+    let _none = plus_one(None);
 }
 
 fn plus_one(x: Option<i32>) -> Option<i32> {
@@ -85,8 +85,8 @@ fn value_in_cents(coin: Coin) -> u32 {
             println!("Lucky penny!");
             return 1;
         }
-        Coin::Nickel => 5,
-        Coin::Dime => 10,
+        Coin::_Nickel => 5,
+        Coin::_Dime => 10,
         Coin::Quater(state) => {
             println!("State quarter from {:?}!", state);
             return 25;
@@ -94,17 +94,17 @@ fn value_in_cents(coin: Coin) -> u32 {
     };
 }
 
-fn handle_u8(num: u8) {
+fn _handle_u8(num: u8) {
     match num {
         3 => println!("three"),
         _ => (),
     };
 }
 
-fn show_if_let() {
+fn _show_if_let() {
     let some_u8_value = Some(0u8);
 
     if let Some(3) = some_u8_value {
-        println!("three");
+        println!("three")
     }
 }
