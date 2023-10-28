@@ -16,4 +16,5 @@ members = [
     "10-2.module-privacy_examples",
     "10-3.module-importing_name",
     "11.vector",
+    "12.string",
 ]
