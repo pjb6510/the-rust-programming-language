@@ -58,6 +58,10 @@ name = "ownership"
 version = "0.1.0"
 
 [[package]]
+name = "practice_collection"
+version = "0.1.0"
+
+[[package]]
 name = "privacy_example"
 version = "0.1.0"
 

@@ -18,4 +18,5 @@ members = [
     "11.vector",
     "12.string",
     "13.hash_map",
+    "14.practice_collection",
 ]
