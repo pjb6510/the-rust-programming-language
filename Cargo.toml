@@ -17,4 +17,5 @@ members = [
     "10-3.module-importing_name",
     "11.vector",
     "12.string",
+    "13.hash_map",
 ]
