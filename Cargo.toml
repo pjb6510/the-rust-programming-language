@@ -19,4 +19,5 @@ members = [
     "12.string",
     "13.hash_map",
     "14.practice_collection",
+    "15.error",
 ]
