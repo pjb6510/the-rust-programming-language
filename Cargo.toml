@@ -20,4 +20,5 @@ members = [
     "13.hash_map",
     "14.practice_collection",
     "15.error",
+    "16.generic",
 ]
